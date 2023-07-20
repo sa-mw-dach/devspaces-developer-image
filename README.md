@@ -1,4 +1,4 @@
-# quarkus-developer-image
+# devspaces-developer-image Project
 
 Used to describe the process of creating custom images in a cicd way for OpenShift Dev Spaces.
 Image gets pushed to quay, so a user secret is needed.
@@ -35,9 +35,9 @@ To use this project on your own you'll have to do these steps:
 5. Commit everything
 6. Apply the argo app via `oc apply -f argoapp.yaml`
 7. In the browser, navigate in your forked github devspaces-image project to the settings page and open your webhooks
-8. Copy your pipeline event listener url via `oc get route quarkus-developer-image-el-route -n devspaces-image -o go-template='{{.spec.host}}'`
+8. Copy your pipeline event listener url via `oc get route devspaces-developer-image-el-route -n devspaces-image -o go-template='{{.spec.host}}'`
 9.  Create a webhook, paste the pipeline and set the content type to json
-10. Open your Dev Spaces project, for example via link: [https://devspaces.apps.ocp.ocp-gm.de/#https://github.com/gmodzelewski/quarkus-developer-image]
+10. Open your Dev Spaces project, for example via link: [https://devspaces.apps.ocp.ocp-gm.de/#https://github.com/sa-mw-dach/devspaces-developer-image]
 11. Start coding cool stuff
 
 ### Bugfixing:
