@@ -1,7 +1,3 @@
-[Contribute via OpenShift Dev Spaces](https://devspaces.apps.ocp.ocp-gm.de/#https://github.com/gmodzelewski/quarkus-developer-image)
-
-[Contribute via OpenShift Dev Spaces via intellij-ce](https://devspaces.apps.ocp.ocp-gm.de/#https://github.com/gmodzelewski/quarkus-developer-image?new&che-editor=che-incubator/che-idea/latest)
-
 # quarkus-developer-image
 
 Used to describe the process of creating custom images in a cicd way for OpenShift Dev Spaces.
@@ -9,7 +5,7 @@ Image gets pushed to quay, so a user secret is needed.
 
 ## Prerequisites
 
-Assuming you are using this project as a part of the [devspaces-demo project](https://github.com/gmodzelewski/devspaces-demo), you will have the steps described in the Readme there already completed.
+Assuming you are using this project as a part of the [devspaces-demo project](https://github.com/sa-mw-dach/devspaces-demo), you will have the steps described in the Readme there already completed.
 You will need to create the quay.io secret in the devspaces-image namespace as well.
 
 ```sh
